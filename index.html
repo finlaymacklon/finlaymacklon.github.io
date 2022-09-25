@@ -5,13 +5,12 @@
   <meta content="utf-8" http-equiv="encoding">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Finlay Macklon</title>
-  <!-- <link rel="icon" type="image/x-icon" href="/img/favicon.ico"/> -->
-  <!-- https://bulma.io/documentation/customize/with-node-sass/  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico"/>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5JNWVVQKXC"></script>
-  <script>
+  <script defer async src="https://www.googletagmanager.com/gtag/js?id=G-5JNWVVQKXC"></script>
+  <script defer>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -19,55 +18,44 @@
   </script>
 </head>
 <body>
-  <div class="section columns">
-    <div class="column">
-        <div id="contents" class="box container has-text-centered" style="max-width:800px">
-          <h1 class="title">
-            Finlay Macklon
-          </h1>
-          <hr>
-          <div id="about_me" class="">
-            <h2 class="subtitle is-5 pt-2">Bio</h2>
-            <div class="block">
-              <p>I am a PhD student in the Analytics of Software, GAmes, and Repository Data (ASGAARD) Lab at the University of Alberta. My research is focused on visual testing for web games.</p>
-            </div>
-          </div>
-          <hr>
-          <div id="other_info" class="">
-            <div id="links" class="block">
-              <h2 class="subtitle is-5 pt-2">Links</h2>
-              <div class="block">
-                <div class="tabs is-centered is-toggle">
-                  <ul style="flex-shrink: 1; flex-wrap: wrap;">
-                    <li>
-                      <a href="https://scholar.google.ca/citations?user=IwmKG3YAAAAJ&hl=en" class="fa fa-google"><span style="font-size:0.8rem; font-weight: bold; font-family: Lato;">&nbsp;Scholar</span></a>
-                    </li>
-                    <li>
-                      <a href="https://github.com/finlaymacklon" class="fa fa-github"><span style="font-size:0.8rem; font-weight: bold; font-family: Lato;">&nbsp;GitHub</span></a>
-                    </li>
-                    <li>
-                      <a href="https://www.linkedin.com/in/finlaymacklon/" class="fa fa-linkedin"><span style="font-size:0.8rem; font-weight: bold; font-family: Lato;">&nbsp;LinkedIn</span></a>
-                    </li>
-                    <li>
-                      <a href="https://twitter.com/finlaymacklon" class="fa fa-twitter"><span style="font-size:0.8rem; font-weight: bold; font-family: Lato;">&nbsp;Twitter</span></a>
-                    </li>
-                    <li>
-                      <a style="font-size:0.8rem; font-weight: bold;" href="https://asgaard.ece.ualberta.ca/" >
-                        ASGAARD Lab
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- empty space -->
-          <br>
-        </div>
-      </div>
-      <div class="column is-narrow">
-        <!-- empty space -->
-      </div>
-  </div>
+
+  <section class="hidden">
+    <h1 class="hidden">Finlay Macklon</h1>
+    <div>
+      <p class="contain hidden"> 
+        I am a PhD student in the Analytics of Software, GAmes, and Repository Data (ASGAARD) Lab at UAlberta.
+      </p>
+      <p class="contain hidden">
+        My research is focused on visual testing for web games.
+      </p>
+    </div>
+  </section>
+
+  <section class="hidden">
+    <h2 class="hidden">Links</h2>
+    <ul style="flex-shrink: 1; flex-wrap: wrap;">
+      <li class="contain hidden">
+        <img src="img/googlescholar.svg" width="16" height="16"></img>
+        <a href="https://scholar.google.ca/citations?user=IwmKG3YAAAAJ&hl=en">&nbsp;GoogleScholar</a>
+      </li>
+      <li class="contain hidden">
+        <img src="img/github.svg" width="16" height="16"></img>
+        <a href="https://github.com/finlaymacklon">&nbsp;GitHub</a>
+      </li>
+      <li class="contain hidden">
+        <img src="img/linkedin.svg" width="16" height="16"></img>
+        <a href="https://www.linkedin.com/in/finlaymacklon/">&nbsp;LinkedIn</a>
+      </li>
+      <li class="contain hidden">
+        <img src="img/twitter.svg" width="16" height="16"></img>
+        <a href="https://twitter.com/finlaymacklon">&nbsp;Twitter</a>
+      </li>
+      <li class="contain hidden">
+        <img src="img/asgaard.svg" width="16" height="16"></img>
+        <a href="https://asgaard.ece.ualberta.ca/">&nbsp;ASGAARD</a>
+      </li>
+    </ul>
+  </section>
+
 </body>
 </html>
