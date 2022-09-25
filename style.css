@@ -46,7 +46,7 @@ p {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
-    transition: all 750ms ease;
+    transition: all 1s;
 }
 
 .show {
@@ -62,17 +62,17 @@ p {
 }
 
 .contain:nth-child(2) {
-    transition-delay: 100ms;
+    transition-delay: 50ms;
 }
 
 .contain:nth-child(3) {
-    transition-delay: 200ms;
+    transition-delay: 100ms;
 }
 
 .contain:nth-child(4) {
-    transition-delay: 300ms;
+    transition-delay: 150ms;
 }
 
 .contain:nth-child(5) {
-    transition-delay: 400ms;
+    transition-delay: 200ms;
 }
