@@ -2,7 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 body {
-    background-color:#f6f6f6;
+    background-color:#eae8e8;
+    /* background-color: #fafafa; */
+    background-image: url(img/topography.svg);
     color: #101010;
     font-family: "Lato", sans-serif;
     padding: 0;
@@ -14,6 +16,7 @@ section {
     place-items: center;
     align-content: center;
     min-height: 100vh;
+    /* backdrop-filter: blur(10px); */
 }
 
 ul {
@@ -34,6 +37,10 @@ p {
     text-align: center;
     white-space: pre-line;
 }
+
+/* .container {
+    backdrop-filter: blur(5px);
+} */
 
 .hidden {
     opacity: 0;
