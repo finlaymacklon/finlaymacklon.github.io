@@ -15,8 +15,12 @@ section {
     display: grid;
     place-items: center;
     align-content: center;
-    min-height: 30vh;
+    /* min-height: 30vh; */
     /* backdrop-filter: blur(10px); */
+}
+
+h1 {
+    margin-bottom: 0;
 }
 
 ul {
