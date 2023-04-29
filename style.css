@@ -3,29 +3,18 @@
 
 body {
     background-color:#ffffffcf;
-    /* background-color: #fafafa; */
-    /* background-image: url(img/topography.svg); */
+    /* background-color: #e3e3e3;
+    background-image: url(img/topography.svg); */
     color: #101010;
     font-family: "Fira Code", sans-serif;
     padding: 0;
-    margin: 0;
-    margin-top: 30px;
+    margin: 30px 10px;
 }
 
 section {
     display: grid;
     place-items: center;
     align-content: center;
-    /* min-height: 30vh; */
-    /* backdrop-filter: blur(1px); */
-}
-
-h1 {
-    margin-bottom: 0;
-}
-
-h3 {
-    margin-top: 0;
 }
 
 ul {
@@ -42,7 +31,7 @@ li {
 }
 
 li:hover {
-    transform: scale(1.025);
+    transform: scale(1.05);
 }
 
 li > img {
@@ -58,9 +47,8 @@ p {
     white-space: pre-line;
 }
 
-#profile {
-    margin-right: 10px;
-    margin-left: 10px;
+.section-header {
+    margin-top: 0;
 }
 
 #profile > h2 {
@@ -69,23 +57,22 @@ p {
 
 #profile-picture {
     float: left;
+    margin-left: 5px;
     margin-right: 25px;
     border-radius: 50%;
 }
 
 #profile-text {
     font-size: 14px;
-    margin-top: 0;
+    margin: 0 5px;
     text-align: left;
     max-width: 1200px;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    /* repeat(1, 1fr); */
+    grid-template-columns: repeat(12, [col-start] 1fr);
     gap: 25px;
-    grid-auto-rows: minmax(100px, auto);
     margin-right: 10px;
     margin-left: 10px;
 }
@@ -99,6 +86,16 @@ p {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
     max-width: 600px;
+    grid-column: col-start / span 12;
+}
+
+@media (min-width: 768px) {
+    #grid-one {
+        grid-column: col-start / span 6;
+    }
+    #grid-two {
+        grid-column: col-start 7 / span 6;
+    }
 }
 
 .grid-member > h4 {
@@ -117,13 +114,4 @@ p {
     /* make the items centered */
     display: flex;
     justify-content: center;
-}
-
-#grid-one {
-    grid-column: 1 / 2;
-    grid-row: 1;
-}
-#grid-two {
-    grid-column: 2;
-    grid-row: 1 ;
 }
