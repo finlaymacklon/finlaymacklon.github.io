@@ -6,81 +6,88 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Finlay Macklon</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap"></noscript>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <section>
-    <div id="profile">
-      <img id="profile-picture" src="https://pbs.twimg.com/profile_images/1637855606714556417/tS2gVzIL_400x400.jpg" alt="Finlay Macklon" width="128" height="128">
-      <h2>Finlay Macklon</h2>
-      <p id="profile-text"> 
-        I am a PhD student in the Analytics of Software, GAmes, and Repository Data (<a href="https://asgaard.ece.ualberta.ca/">ASGAARD</a>) Lab at the University of Alberta. My research is focused on automated visual testing for web applications built with the HTML5 &lt;canvas&gt;.
-      </p>
-      <ul>
-        <li>
-          <img src="img/googlescholar.svg" width="14" height="14"></img>
-          <a href="https://scholar.google.ca/citations?user=IwmKG3YAAAAJ&hl=en">Google&nbsp;Scholar</a>
-        </li>
-        <li>
-          <img src="img/github.svg" width="14" height="14"></img>
-          <a href="https://github.com/finlaymacklon">GitHub</a>
-        </li>
-        <li>
-          <img src="img/linkedin.svg" width="14" height="14"></img>
-          <a href="https://www.linkedin.com/in/finlaymacklon/">LinkedIn</a>
-        </li>
-        <li>
-          <img src="img/twitter.svg" width="14" height="14"></img>
-          <a href="https://twitter.com/finlaymacklon">Twitter</a>
-        </li>
-        <!-- <li>
-          <img src="img/asgaard.svg" width="14" height="14"></img>
-          <a href="https://asgaard.ece.ualberta.ca/">ASGAARD</a>
-        </li> -->
-      </ul>
-    </div>
-  </section>
-  <br>
-  <section>
-    <h3 class="section-header">Research</h3>
-    <div class="grid-container">
-      <div id="grid-one" class="grid-member">        
-          <h4>Automatically Detecting Visual Bugs in HTML5 Canvas Games</h4>
-          <p><u>Finlay&nbsp;Macklon</u>, Mohammad&nbsp;Reza&nbsp;Taesiri, Markos&nbsp;Viggiato, Stefan&nbsp;Antoszko, Natalia&nbsp;Romanova, Dale&nbsp;Paas, Cor&#8209;Paul&nbsp;Bezemer</p>
-          <p><i>37th IEEE/ACM International Conference on Automated Software Engineering, 2022</i></p>
+  <header>
+    <h1 id="header-title-text">Finlay Macklon's Personal Webpage</h1>
+  </header>
+  <div id="content">
+    <section>
+      <!-- <h2 class="section-header">About Me</h2> -->
+      <div id="profile">
+        <div id="profile-picture-container">
+          <img id="profile-picture" src="https://pbs.twimg.com/profile_images/1637855606714556417/tS2gVzIL_400x400.jpg" alt="Finlay Macklon" width="128" height="128">
+        </div>
+        <h1>Finlay Macklon</h1>
+        <p id="profile-text"> 
+          I am a PhD student in the <i>Analytics of Software, GAmes, and Repository Data (<a href="https://asgaard.ece.ualberta.ca/">ASGAARD</a>) Lab</i> at the University of Alberta. My research is focused on automated visual testing for web applications built with the HTML5 &lt;canvas&gt;.
+        </p>
+      </div>
+    </section>
+    <section>
+      <h2 class="section-header">Publications</h2>
+      <div class="grid-container">
+        <div id="grid-one" class="grid-member">        
+            <h4>Automatically Detecting Visual Bugs in HTML5 Canvas Games</h4>
+            <p><u>Finlay&nbsp;Macklon</u>, Mohammad&nbsp;Reza&nbsp;Taesiri, Markos&nbsp;Viggiato, Stefan&nbsp;Antoszko, Natalia&nbsp;Romanova, Dale&nbsp;Paas, Cor&#8209;Paul&nbsp;Bezemer</p>
+            <p><i>37th IEEE/ACM International Conference on Automated Software Engineering, 2022</i></p>
+            <ul>
+              <li>
+                <img src="img/paper.svg" width="14" height="14"></img>
+                <a href="https://arxiv.org/abs/2208.02335">Pre&#8209;print</a>
+              </li>
+              <li>
+                <img src="img/code.svg" width="14" height="14"></img>
+                <a href="https://github.com/asgaardlab/canvas-visual-bugs-testbed/releases/tag/p1">Code</a>
+              </li>
+              <li>
+                <img src="img/data.svg" width="14" height="14"></img>
+                <a href="https://zenodo.org/record/6950640">Data</a>
+              </li>
+            </ul>
+            <br>
+        </div>
+        <div id="grid-two" class="grid-member">
+          <h4>A Taxonomy of Testable HTML5 Canvas Issues</h4>
+          <p><u>Finlay&nbsp;Macklon</u>, Markos&nbsp;Viggiato, Natalia&nbsp;Romanova, Chris&nbsp;Buzon, Dale&nbsp;Paas, Cor&#8209;Paul&nbsp;Bezemer</p>
+          <p><i>IEEE Transactions on Software Engineering, 2023</i></p>
           <ul>
             <li>
               <img src="img/paper.svg" width="14" height="14"></img>
-              <a href="https://arxiv.org/pdf/2208.02335.pdf">Pre&#8209;print</a>
-            </li>
-            <li>
-              <img src="img/code.svg" width="14" height="14"></img>
-              <a href="https://github.com/asgaardlab/canvas-visual-bugs-testbed/releases/tag/p1">Code</a>
+              <a href="https://arxiv.org/abs/2201.07351">Pre&#8209;print</a>
             </li>
             <li>
               <img src="img/data.svg" width="14" height="14"></img>
-              <a href="https://zenodo.org/record/6950640">Data</a>
+              <a href="https://zenodo.org/record/6886143">Data</a>
             </li>
           </ul>
           <br>
+        </div>
       </div>
-      <div id="grid-two" class="grid-member">
-        <h4>A Taxonomy of Testable HTML5 Canvas Issues</h4>
-        <p><u>Finlay&nbsp;Macklon</u>, Markos&nbsp;Viggiato, Natalia&nbsp;Romanova, Chris&nbsp;Buzon, Dale&nbsp;Paas, Cor&#8209;Paul&nbsp;Bezemer</p>
-        <p><i>IEEE Transactions on Software Engineering, 2023</i></p>
-        <ul>
-          <li>
-            <img src="img/paper.svg" width="14" height="14"></img>
-            <a href="https://arxiv.org/pdf/2201.07351.pdf">Pre&#8209;print</a>
-          </li>
-          <li>
-            <img src="img/data.svg" width="14" height="14"></img>
-            <a href="https://zenodo.org/record/6886143">Data</a>
-          </li>
-        </ul>
-        <br>
-      </div>
-    </div>
-  </section>
+    </section>
+    <section>
+      <h2 class="section-header">Social Media Profiles</h2>
+      <ul>
+        <li>
+          <a href="https://scholar.google.ca/citations?user=IwmKG3YAAAAJ&hl=en">Google&nbsp;Scholar</a>
+        </li>
+        <li>
+          <a href="https://github.com/finlaymacklon">GitHub</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/finlaymacklon/">LinkedIn</a>
+        </li>
+        <li>
+          <a href="https://twitter.com/finlaymacklon">Twitter</a>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2024 Finlay Macklon</p>
+  </footer>
 </body>
 </html>
