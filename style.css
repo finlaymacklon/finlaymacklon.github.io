@@ -1,4 +1,5 @@
 @charset "utf-8";
+/* Define colors */
 :root {
     --teal: #008c9e;
     --deep-teal: #005f73;
@@ -18,6 +19,7 @@
     --black-text-normal: #333333;
     --white-text-normal: #f9f9f9;
 }
+/* Set up page layout and generic styling */
 html {
     min-height: 100%;
 }
@@ -31,6 +33,7 @@ body {
     font-family: 'Helvetica', 'Arial', sans-serif;
     font-size: 16px;
 }
+/* Text styling */
 p {
     text-align: center;
     font-size: 1em;
@@ -54,6 +57,7 @@ a {
 a:hover {
     color: var(--light-teal);
 }
+/* Section layout */
 section {
     display: grid;
     place-items: center;
@@ -63,6 +67,7 @@ section {
     margin-bottom: 2em;
     height: 100%;
 }
+/* List styling */
 ul {
     list-style: none;
     margin: 0;
@@ -73,6 +78,20 @@ li {
 li:hover {
     transform: scale(1.05);
 }
+/* Button styling */
+button {
+    background: linear-gradient(to top, var(--dark-slate), var(--slate));
+    color: var(--white-text-normal);
+    border: none;
+    border-radius: 4px;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: 1em;
+}
+button:active {
+    background: var(--light-slate);
+}
+/* Header and footer */
 header, footer {
     width: 100%;
     height: 50px;
@@ -95,13 +114,16 @@ footer {
     border-top: 1px solid var(--deep-teal-border);
     box-shadow: 0 -2px 5px 0 var(--grey-shadow);
 }
+/* Header and footer spacer for when position: fixed */
 .header-footer-spacer {
     height: 0;
 }
+/* Section Title */
 .section-header {
     margin-top: 0;
     margin-bottom: 1em;
 }
+/* Grid layout */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(12, [col-start] 1fr);
@@ -123,7 +145,7 @@ footer {
 }
 .grid-member > h4 {
     margin-bottom: auto;
-    height: 3em;
+    height: 2.25em;
 }
 .grid-paper-authors {
     display: flex;
@@ -132,7 +154,7 @@ footer {
     margin: 0;
     margin-top: auto;
     margin-bottom: auto;
-    height: 6em;
+    height: 5.5em;
 }
 .grid-paper-venue {
     display: flex;
@@ -141,12 +163,12 @@ footer {
     margin: 0;
     margin-top: auto;
     margin-bottom: auto;
-    height: 5em;
+    height: 4.5em;
 }
 .grid-paper-links {
     margin-top: auto;
     margin-bottom: auto;
-    height: 4em;
+    height: 3.5em;
 }
 .grid-paper-links > ul {
     display: flex;
@@ -163,23 +185,26 @@ footer {
 .grid-paper-links > ul > li > a {
     font-size: 0.875em;
     text-align: center;
-    /* padding: 1em 0.5em 0.5em 0.5em; */
+    padding: 0em 0.25em;
 }
 .grid-paper-links > ul > li > img {
     stroke: var(--teal);
-    vertical-align: middle;
+    vertical-align: bottom;
 }
+/* Page title */
 #header-title-text {
     margin: 0;
     padding: 0;
     font-size: 1.25em;
 }
+/* Content area */
 #content {
     padding: 0;
     max-width: 1080px;
     flex: 1 0 auto;
     margin: 0 auto;
 }
+/* Profile/About Me */
 #profile {
     max-width: 100%;
     padding: 1em;
