@@ -6,30 +6,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Finlay Macklon</title>
   <link rel="icon" type="image/x-icon" href="favicon.ico"/>
-  <!-- <link rel="preload" href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap"></noscript> -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1 id="header-title-text">Finlay Macklon's Personal Webpage</h1>
+    <div id="header-content">
+      <div id="header-title-text">
+        <h1 id="header-title-text">Finlay Macklon</h1>
+      </div>
+      <div id="header-links">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/finlaymacklon/">LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://github.com/finlaymacklon">GitHub</a>
+          </li>
+          <li>
+            <a href="https://scholar.google.ca/citations?user=IwmKG3YAAAAJ&hl=en">Google&nbsp;Scholar</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </header>
   <div id="top-of-page" class="header-footer-spacer"></div>
   <div id="content">
     <section>
+      <h2 class="section-header">About Me</h2>
       <div id="profile">
         <div id="profile-picture-container">
           <img id="profile-picture" src="https://pbs.twimg.com/profile_images/1637855606714556417/tS2gVzIL_400x400.jpg" alt="Finlay Macklon" width="128" height="128">
         </div>
-        <h1>Finlay Macklon</h1>
         <p id="profile-text"> 
           I am a PhD student in the <i>Analytics of Software, GAmes, and Repository Data (<a href="https://asgaard.ece.ualberta.ca/">ASGAARD</a>) Lab</i> at the University of Alberta. My research is focused on automated visual testing for web applications built with the HTML5 &lt;canvas&gt;.
         </p>
       </div>
-    </section>
-    <section>
-      <h2 class="section-header">Timeline</h2>
-      <!-- TODO -->
     </section>
     <section>
       <h2 class="section-header">Publications</h2>
@@ -82,44 +93,16 @@
         </div>
       </div>
     </section>
-    <section>
-      <h2 class="section-header">Other Research Contributions</h2>
-      <div class="grid-container">
-        <div class="grid-member">
-          <h4>Towards automatic stuff</h4>
-          <ul>
-            <li>
-              <!-- TODO -->
-            </li>
-          </ul>
-        </div>
+    <section id="mobile-back-to-top">
+      <div>
+        <button><a href="#top-of-page">Back to Top</a></button>
       </div>
-    </section>
-    <section>
-      <h2 class="section-header">Social Media Profiles</h2>
-      <ul>
-        <li>
-          <a href="https://www.linkedin.com/in/finlaymacklon/">LinkedIn</a>
-        </li>
-        <li>
-          <a href="https://github.com/finlaymacklon">GitHub</a>
-        </li>
-        <li>
-          <a href="https://scholar.google.ca/citations?user=IwmKG3YAAAAJ&hl=en">Google&nbsp;Scholar</a>
-        </li>
-        <li>
-          <a href="https://twitter.com/finlaymacklon">Twitter</a>
-        </li>
-      </ul>
     </section>
   </div>
   <div class="header-footer-spacer"></div>
   <footer>
     <div id="footer-copyright">
       <p>&copy; 2024 Finlay Macklon</p>
-    </div>
-    <div id="footer-back-to-top">
-      <button><a href="#top-of-page">Back to Top</a></button>
     </div>
   </footer>
 </body>
