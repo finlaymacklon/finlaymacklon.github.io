@@ -251,6 +251,10 @@ footer {
     stroke: var(--teal);
     vertical-align: bottom;
 }
+.grid-project-description > p {
+    padding-left: 1em;
+    padding-right: 1em;
+}
 /* Profile/About Me */
 #profile {
     max-width: 100%;
